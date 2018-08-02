@@ -1,5 +1,7 @@
 import { Student } from './student';
 
+//Scraping credits : Rahul Gupta ( https://github.com/rahul-1903 )
+
 export const STUDENTS : Student[] =[
     {
         "even": "4.74",
