@@ -1,0 +1,34 @@
+html, body{
+    background-color: #EAEAEA;
+}
+
+mat-icon{
+    color: purple;
+}
+
+.button-row button, .button-row a {
+    margin: 18px;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.mainpad{
+    padding-top: 180px;
+}
+
+
+#border2 {
+    margin-bottom: 10vh;
+    padding: 30px;
+}
+
+.typo{
+    font-family: 'Roboto Mono', monospace;
+    color: gold;
+    padding: 25px;
+    font-size: 10vw;
+}
+
+mat-list-item{
+    font-family: 'Roboto Mono', monospace;
+}

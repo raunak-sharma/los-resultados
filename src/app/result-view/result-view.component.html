@@ -1,0 +1,97 @@
+
+<!--h1>Student Details : </h1>
+<h3>Roll No. : {{ student.roll }}</h3>
+<h3>Reg. No. : {{ student.regno }}</h3>
+<h2>Name : {{student.name}}</h2>
+
+<h4>HMTS2002 : {{ student.HMTS2002 }}</h4>
+<h4>PHYS2001 : {{ student.PHYS2001 }}</h4>
+<h4>MATH2201 : {{ student.MATH2201 }}</h4>
+<h4>MATH2202 : {{ student.MATH2202 }}</h4>
+<h4>CSEN2201 : {{ student.CSEN2201 }}</h4>
+<h4>CSEN2203 : {{ student.CSEN2203 }}</h4>
+<h4>PHYS2011 : {{ student.PHYS2011 }}</h4>
+<h4>MATH2212 : {{ student.MATH2212 }}</h4>
+<h4>CSEN2211 : {{ student.CSEN2211 }}</h4>
+<h4>HMTS2011 : {{ student.HMTS2011 }}</h4>
+
+<h3>SGPA3 : {{ student.odd }}</h3>
+<h3>SGP43 : {{ student.even }}</h3>
+<h3>YGPA2 : {{ student.ygpa }}</h3-->
+
+<h3 style="padding-left: 48%; font-family: 'Roboto Mono', monospace;">Insight :</h3>
+
+<mat-list>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Name</h3>
+    <mat-list-item>
+        <h2 mat-line>{{student.name}}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Roll</h3>
+    <mat-list-item>
+        <h2 mat-line>{{ student.roll }}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Reg. No.</h3>
+    <mat-list-item>
+        <h2 mat-line>{{ student.regno }}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">4th Semester Grades :</h3>
+    <mat-list-item>
+        <h2 mat-line>HMTS2002 : {{ student.HMTS2002 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>PHYS2001 : {{ student.PHYS2001 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>MATH2201 : {{ student.MATH2201 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>MATH2202 : {{ student.MATH2202 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>CSEN2201 : {{ student.CSEN2201 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>CSEN2203 : {{ student.CSEN2203 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>PHYS2011 : {{ student.PHYS2011 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>MATH2212 : {{ student.MATH2212 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>CSEN2211 : {{ student.CSEN2211 }}</h2>
+    </mat-list-item>
+    <mat-list-item>
+        <h2 mat-line>HMTS2011 : {{ student.HMTS2011 }}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">3rd Semester</h3>
+    <mat-list-item>
+        <h2 mat-line>{{ student.odd }}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">4th Semester</h3>
+    <mat-list-item>
+        <h2 mat-line>{{student.even}}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">YGPA 2</h3>
+    <mat-list-item>
+        <h2 mat-line>{{student.ygpa}}</h2>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    </mat-list>
