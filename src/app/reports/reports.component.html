@@ -7,6 +7,87 @@
 
   </div>
 
+  <div class="alanysisBorder">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+        <h2 class="text-center redText">* Analysis :</h2>
+      </div>
+
+    </div>
+
+    <div class="row pointers">
+
+      <div class="col-lg-6 eachPoint">
+        <h1 class="text-center">Avg. YGPA2 : <span class="redText">7.18</span></h1>
+      </div>
+
+      <div class="col-lg-3 eachPoint">
+        <h2 class="text-center">Avg. SGPA3 : <span class="redText">7.28</span></h2>
+      </div>
+
+      <div class="col-lg-3 eachPoint">
+        <h2 class="text-center">Avg. SGPA4 : <span class="redText">7.07</span></h2>
+      </div>
+
+    </div>
+
+    <div class="row pointers">
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. CSEN2203 : <span class="redText">6.33</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. CSEN2211 : <span class="redText">7.62</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. CSEN2201 : <span class="redText">6.42</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. HMTS2002 : <span class="redText">6.67</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
+      </div>
+
+    </div>
+
+    <div class="row pointers">
+
+      <div class="col-lg-2 eachPoint">
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. MATH2212 : <span class="redText">8.53</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. HMTS2011 : <span class="redText">8.22</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. PHYS2001 : <span class="redText">6.63</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. MATH2202 : <span class="redText">7.72</span></h3>
+      </div>
+
+      <div class="col-lg-2 eachPoint">
+        <h3 class="text-center">Avg. MATH2201 : <span class="redText">6.70</span></h3>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
   <div class="row">
 
     <div class="col-lg-2"></div>
@@ -34,7 +115,7 @@
     <div class="col-lg-8">
 
       <mat-list>
-        <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Students</h3>
+        <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">*Students</h3>
         <mat-list-item *ngFor="let student of students" (click)="ygpa2Click()">
           <mat-icon mat-list-icon >account_circle</mat-icon>
           <h4 mat-line>{{student.name}}</h4>
