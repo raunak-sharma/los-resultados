@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="false"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+
+    <mat-toolbar style="background-color: #d89b00; color: #1e009f;">Menu</mat-toolbar>
+    <mat-nav-list>
+      <hr>
+
+        <h4 mat-list-item class="example-spacer">&nbsp;</h4>
+
+        <h4 mat-list-item class="sideLinks" routerLink='/'>Home</h4>
+
+        <h4 mat-list-item class="sideLinks" routerLink='/all'>Overview</h4>
+
+        <h4 mat-list-item class="sideLinks" routerLink='/personal'>Personal</h4>
+
+        <a href="https://github.com/raunak-sharma/los-resultados/">
+          <button class="indBut" mat-stroked-button>Code &nbsp; <mat-icon class="example-icon">code</mat-icon></button>
+        </a>&nbsp;
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="color: #d89b00; background-color: #1e009f;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+          <h2 class="sideLinks">Resultados</h2>
+
+          <h2 class="example-spacer">&nbsp;</h2>
+
+          <h2 class="indLinks" routerLink='/'>Home</h2>
+
+          <h2 class="indLinks" routerLink='/all'>Overview</h2>
+
+          <h2 class="indLinks" routerLink='/personal'>Personal</h2>
+
+          <a href="https://github.com/raunak-sharma/los-resultados/">
+            <button class="indBut" mat-stroked-button>Code &nbsp; <mat-icon class="example-icon">code</mat-icon></button>
+          </a>&nbsp;
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

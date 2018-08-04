@@ -1,0 +1,58 @@
+mat-toolbar{
+  position: fixed;
+  z-index: 1;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background-color:#1e009f;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width : 740px) {
+  .sidenav{
+    display: none;
+  }
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+@media (max-width : 740px) {
+  .indLinks{
+    display: none;
+  }
+}
+
+.indLinks {
+  padding: 25px;
+  color: #d89b00;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.indBut {
+  margin-left: 22px;
+  padding: 8px;
+  color: #d89b00;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.sideLinks {
+  padding: 8px;
+  color: #d89b00;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*
+background-color:#1e009f;
+color: #d89b00;
+*/

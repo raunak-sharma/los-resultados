@@ -8,16 +8,20 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
     imports:
     [MatButtonModule, MatCheckboxModule, MatToolbarModule,
     MatIconModule, MatListModule, MatDialogModule, MatTableModule,
-    MatSelectModule, MatSlideToggleModule, MatInputModule],
+    MatSelectModule, MatSlideToggleModule, MatInputModule,
+    FlexLayoutModule, MatSidenavModule],
     exports:
     [MatButtonModule, MatCheckboxModule, MatToolbarModule,
     MatIconModule, MatListModule, MatDialogModule, MatTableModule,
-    MatSelectModule, MatSlideToggleModule, MatInputModule],
+    MatSelectModule, MatSlideToggleModule, MatInputModule,
+    FlexLayoutModule, MatSidenavModule],
 })
 
 export class MaterialModule {  }
