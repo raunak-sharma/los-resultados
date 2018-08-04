@@ -7,11 +7,24 @@
 }
 
 mat-toolbar{
-    margin-top: 25vh;
+    z-index: 2;
+    padding-top: 5vh;
     min-height: 40vh;
+    background-color: #1e009f;
     font-family: 'Roboto Mono', monospace;
 }
 
 .credits{
     font-size: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .credits {
+        overflow: scroll;
+    }
+}
+
+.toolColor{
+    color: #d89b00;
+    background-color: #1e009f;
 }

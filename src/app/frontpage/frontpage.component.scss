@@ -1,0 +1,52 @@
+.front{
+    z-index: 1;
+    padding-top: 64vh;
+}
+
+.all{
+    color: #ffb800;
+    padding-top : 11%;
+    min-height: 90vh;
+    background-color: #0022d2;
+}
+
+.personal{
+    color: #0022d2;
+    padding-top : 11%;
+    min-height: 90vh;
+    background-color:  	#ffb800;
+}
+
+button{
+    margin-top: 5vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.perBut{
+    color:#ffb800;
+    background-color: #0022d2;
+}
+
+.ovrBut{
+    color: #0022d2;
+    background-color:#ffb800;
+}
+
+.border2 {
+    padding: 30px;
+    margin-bottom: 10vh;
+}
+
+.typo{
+    color: gold;
+    padding: 25px;
+    font-size: 11vw;
+}
+
+.bannerr{
+    width: 100%;
+    z-index: 0;
+    height: 80vh;
+    position: fixed;
+    padding-top: 16vh;
+}

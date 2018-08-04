@@ -9,6 +9,12 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  show:boolean = true;
+
+  toggleCollapse() {
+    this.show = !this.show
+  }
+
   ngOnInit() {
   }
 

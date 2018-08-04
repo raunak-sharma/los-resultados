@@ -16,7 +16,7 @@ export class ReportsComponent implements OnInit {
 
   students : Student[];
 
-  constructor(private data : DataStudentService, public dialog : MatDialog) { }
+  constructor(private data : DataStudentService, public dialog : MatDialog) {  }
 
   ngOnInit() {
     this.students = this.data.getStudentsYGPA2();

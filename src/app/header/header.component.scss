@@ -1,25 +1,38 @@
-.example-icon {
-    padding: 0 14px;
+mat-toolbar {
+    z-index: 1;
+    position: fixed;
+    font-family: 'Roboto Mono', monospace;
+    height: 8vh;
+}
+
+button, h2{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.toolColor{
+    background-color:#1e009f;
+}
+
+.toolText{
+    padding: 20px;
+    color: #d89b00;
+}
+
+.padder{
+    padding-top: 2.8vh;
+    padding-bottom: 2vh;
+}
+
+.example-icon{
 }
 
 .example-spacer {
     flex: 1 1 auto;
 }
 
-mat-toolbar{
-    font-family: 'Roboto Mono', monospace;
-    color: #000;
-    z-index: 1;
-    position: fixed;
-    padding: 15px;
-    height: 10vh;
-}
-
 a:visited {
     text-decoration: none;
-    color : white;
-}
-
-a:hover {
-    color: blue;
+    color : #d89b00;
 }

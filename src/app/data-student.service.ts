@@ -25,4 +25,8 @@ export class DataStudentService {
     return STUDENTS.sort((obj1, obj2) => obj1.name.localeCompare(obj2.name));
   }
 
+  getResults(rno : string) {
+    return STUDENTS.filter((data) => +data.roll == +rno)[0];
+  }
+
 }

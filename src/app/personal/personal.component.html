@@ -1,0 +1,110 @@
+<div class="container-fluid searchPad">
+    <div class="row">
+
+        <div class="col-lg-12 text-center search">
+            <h1>Enter Roll. No.</h1>
+
+            <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+
+            <p>
+                <mat-form-field class="half-width">
+                <input matInput formControlName="rollNo" placeholder="Roll No" type="text">
+                </mat-form-field>
+            </p>
+            <p>
+                <button type="submit" mat-stroked-button class="background-primary text-floral-white">Submit</button>
+            </p>
+        </form>
+
+        </div>
+
+    </div>
+
+
+
+  <div class="row" *ngIf="results">
+    <div class="col-lg-3"></div>
+
+    <div class="col-lg-6 searchRes">
+
+        <mat-list>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">Name</h3>
+        <mat-list-item>
+            <h2 mat-line>{{results.name}}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">Roll</h3>
+        <mat-list-item>
+            <h2 mat-line>{{ results.roll }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">Reg. No.</h3>
+        <mat-list-item>
+            <h2 mat-line>{{ results.regno }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">4th Semester Grades :</h3>
+        <mat-list-item>
+            <h2 mat-line>HMTS2002 : {{ results.HMTS2002 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>PHYS2001 : {{ results.PHYS2001 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>MATH2201 : {{ results.MATH2201 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>MATH2202 : {{ results.MATH2202 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>CSEN2201 : {{ results.CSEN2201 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>CSEN2203 : {{ results.CSEN2203 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>PHYS2011 : {{ results.PHYS2011 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>MATH2212 : {{ results.MATH2212 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>CSEN2211 : {{ results.CSEN2211 }}</h2>
+        </mat-list-item>
+        <mat-list-item>
+            <h2 mat-line>HMTS2011 : {{ results.HMTS2011 }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">3rd Semester</h3>
+        <mat-list-item>
+            <h2 mat-line>{{ results.odd }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">4th Semester</h3>
+        <mat-list-item>
+            <h2 mat-line>{{ results.even }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader class="listHeader">YGPA 2</h3>
+        <mat-list-item>
+            <h2 mat-line>{{ results.ygpa }}</h2>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+        </mat-list>
+
+    </div>
+
+    <div class="col-lg-3"></div>
+
+    </div>
+</div>

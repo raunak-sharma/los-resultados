@@ -1,10 +1,22 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="toolColor">
 
-  <mat-toolbar-row>
-    <span>Resultados</span>
-    <span class="example-spacer">&nbsp;</span>
-    <a href="https://github.com/raunak-sharma/los-resultados/"><mat-icon class="example-icon">code</mat-icon></a>
-    &nbsp;
+  <mat-toolbar-row class="padder">
+    <span></span>
+
+    <span class="toolText" routerLink='/'>Resultados</span>
+
+    <!--button mat-flat-button (click)="toggleCollapse()" class="navbar-toggler navbar-toggler-right" type="button">Click</button-->
+
+    <h2 [class.show]="show" class="toolText collapse" routerLink='/all'>Overview</h2>
+
+    <h2 [class.show]="show" class="toolText collapse" routerLink='/personal'>Personal</h2>
+
+    <h2 [class.show]="show" class="example-spacer collapse">&nbsp;</h2>
+
+    <a href="https://github.com/raunak-sharma/los-resultados/">
+      <button mat-stroked-button>Code &nbsp; <mat-icon class="example-icon">code</mat-icon></button>
+    </a>&nbsp;
+
   </mat-toolbar-row>
 
 </mat-toolbar>

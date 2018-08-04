@@ -3,7 +3,7 @@ html, body{
 }
 
 mat-icon{
-    color: purple;
+    color: #0022d2;
 }
 
 .button-row button, .button-row a {
@@ -15,18 +15,18 @@ mat-icon{
 button {
     font-family: 'Roboto Mono', monospace;
 }
+
 .mainpad{
-    padding-top: 180px;
+    padding-top: 16vh;
 }
 
 
-#border2 {
-    margin-bottom: 10vh;
+.border2 {
     padding: 30px;
+    margin-bottom: 10vh;
 }
 
 .typo{
-    font-family: 'Roboto Mono', monospace;
     color: gold;
     padding: 25px;
     font-size: 11vw;
@@ -35,15 +35,16 @@ button {
 mat-list-item{
     font-family: 'Roboto Mono', monospace;
 }
+
 .alanysisBorder{
     padding: 2vh;
-    border: 5px black solid;
     margin-bottom: 14vh;
+    border: 5px black solid;
 }
 
 .pointers{
-    margin-top: 4vh;
     padding: 5vh;
+    margin-top: 4vh;
 }
 
 .eachPoint{
@@ -52,4 +53,20 @@ mat-list-item{
 
 .redText{
     color: blue;
+}
+
+.search{
+    border: 5px black solid;
+    padding: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.viewButton{
+    color: #EAEAEA;
+    background-color: #0022d2;
+}
+
+.lastPad{
+    padding-bottom: 14vh;
 }

@@ -1,10 +1,9 @@
 <div class="container-fluid mainpad">
 
   <div class="row">
-    <div id="border2" class="col-lg-12">
-      <h1 class="typo text-center">Result<span style="color: purple">ados</span></h1>
+    <div class="col-lg-12 border2">
+      <h1 class="typo text-center">Result<span style="color: #0022d2">ados</span></h1>
     </div>
-
   </div>
 
   <div class="alanysisBorder">
@@ -12,7 +11,7 @@
     <div class="row">
 
       <div class="col-lg-12">
-        <h2 class="text-center redText">* Analysis :</h2>
+        <h2 class="text-center redText">*Analysis :</h2>
       </div>
 
     </div>
@@ -86,8 +85,6 @@
 
   </div>
 
-
-
   <div class="row">
 
     <div class="col-lg-2"></div>
@@ -108,7 +105,7 @@
     <div class="col-lg-2"></div>
 
   </div>
-  <div class="row">
+  <div class="row lastPad">
 
     <div class="col-lg-2"></div>
 
@@ -120,7 +117,7 @@
           <mat-icon mat-list-icon >account_circle</mat-icon>
           <h4 mat-line>{{student.name}}</h4>
           <p mat-line> {{student.roll}} </p>
-          <button mat-raised-button color="primary" (click)="openDialog(student)">View</button>
+          <button mat-raised-button class="viewButton" (click)="openDialog(student)">View</button>
         </mat-list-item>
       </mat-list>
 

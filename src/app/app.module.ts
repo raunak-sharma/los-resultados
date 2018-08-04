@@ -13,7 +13,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { DataStudentService } from './data-student.service';
 import { ResultViewComponent } from './result-view/result-view.component';
 
-import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PersonalComponent } from './personal/personal.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { MatDialogModule } from '@angular/material/dialog';
     HeaderComponent,
     FooterComponent,
     ReportsComponent,
-    ResultViewComponent
+    ResultViewComponent,
+    PersonalComponent,
+    FrontpageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatDialogModule,
+    ReactiveFormsModule
   ],
   entryComponents: [
     ResultViewComponent
