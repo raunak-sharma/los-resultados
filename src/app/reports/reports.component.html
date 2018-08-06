@@ -5,126 +5,372 @@
       <h1 class="typo text-center">Result<span style="color: #0022d2">ados</span></h1>
     </div>
   </div>
-
-  <div class="alanysisBorder">
-
-    <div class="row">
-
-      <div class="col-lg-12">
-        <h2 class="text-center redText">*Analysis :</h2>
-      </div>
-
-    </div>
-
-    <div class="row pointers">
-
-      <div class="col-lg-6 eachPoint">
-        <h1 class="text-center">Avg. YGPA2 : <span class="redText">7.18</span></h1>
-      </div>
-
-      <div class="col-lg-3 eachPoint">
-        <h2 class="text-center">Avg. SGPA3 : <span class="redText">7.28</span></h2>
-      </div>
-
-      <div class="col-lg-3 eachPoint">
-        <h2 class="text-center">Avg. SGPA4 : <span class="redText">7.07</span></h2>
-      </div>
-
-    </div>
-
-    <div class="row pointers">
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. CSEN2203 : <span class="redText">6.33</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. CSEN2211 : <span class="redText">7.62</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. CSEN2201 : <span class="redText">6.42</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. HMTS2002 : <span class="redText">6.67</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
-      </div>
-
-    </div>
-
-    <div class="row pointers">
-
-      <div class="col-lg-2 eachPoint">
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. MATH2212 : <span class="redText">8.53</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. HMTS2011 : <span class="redText">8.22</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. PHYS2001 : <span class="redText">6.63</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. MATH2202 : <span class="redText">7.73</span></h3>
-      </div>
-
-      <div class="col-lg-2 eachPoint">
-        <h3 class="text-center">Avg. MATH2201 : <span class="redText">6.72</span></h3>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="row">
-
-    <div class="col-lg-2"></div>
-
-    <div class="col-8">
-
-      <h3>Sort By :</h3>
-
-      <div class="button-row">
-        <button mat-raised-button style="background-color: #ffb800;" (click)="namerollClick()">Name &nbsp;/ &nbsp;Roll No. &nbsp;/ &nbsp;Reg. No.</button>
-        <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa3Click()">SGPA 3</button>
-        <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa4Click()">SGPA 4</button>
-        <button mat-raised-button style="background-color: #ffb800;" (click)="ygpa2Click()">YGPA 2</button>
-      </div>
-
-    </div>
-
-    <div class="col-lg-2"></div>
-
-  </div>
-  <div class="row lastPad">
-
-    <div class="col-lg-2"></div>
-
-    <div class="col-lg-8">
-
-      <mat-list>
-        <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">*Students</h3>
-        <mat-list-item *ngFor="let student of students" (click)="ygpa2Click()">
-          <mat-icon mat-list-icon >account_circle</mat-icon>
-          <h4 mat-line>{{student.name}}</h4>
-          <p mat-line> {{student.roll}} </p>
-          <button mat-raised-button class="viewButton" (click)="openDialog(student)">View</button>
-        </mat-list-item>
-      </mat-list>
-
-    </div>
-
-    <div class="col-lg-2"></div>
-
-  </div>
-
 </div>
+
+<mat-tab-group class="tabsBar">
+
+  <mat-tab label="CSE">
+
+    <div class="container-fluid mainpad">
+
+      <div class="row">
+        <div class="col-lg-12 border2">
+          <h1 class="typo1 text-center">CSE <span style="color: #0022d2">2016-20</span></h1>
+        </div>
+      </div>
+
+      <div class="alanysisBorder">
+
+        <div class="row">
+
+          <div class="col-lg-12">
+            <h2 class="text-center redText" style="font-family: 'Roboto Mono', monospace;">*Analysis :</h2>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-6 eachPoint">
+            <h1 class="text-center">Avg. YGPA2 : <span class="redText">7.18</span></h1>
+          </div>
+
+          <div class="col-lg-3 eachPoint">
+            <h2 class="text-center">Avg. SGPA3 : <span class="redText">7.28</span></h2>
+          </div>
+
+          <div class="col-lg-3 eachPoint">
+            <h2 class="text-center">Avg. SGPA4 : <span class="redText">7.07</span></h2>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2203 : <span class="redText">6.33</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2211 : <span class="redText">7.62</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2201 : <span class="redText">6.42</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. HMTS2002 : <span class="redText">6.67</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-2 eachPoint">
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2212 : <span class="redText">8.53</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. HMTS2011 : <span class="redText">8.22</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. PHYS2001 : <span class="redText">6.63</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2202 : <span class="redText">7.73</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2201 : <span class="redText">6.72</span></h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-2"></div>
+
+        <div class="col-8">
+
+          <h3 style="font-family: 'Roboto Mono', monospace;">Click on One of Sorting Options :</h3>
+
+          <div class="button-row">
+            <button mat-raised-button style="background-color: #ffb800;" (click)="namerollClick()">Name &nbsp;/ &nbsp;Roll No. &nbsp;/ &nbsp;Reg. No.</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa3Click()">SGPA 3</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa4Click()">SGPA 4</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="ygpa2Click()">YGPA 2</button>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+
+      </div>
+      <div class="row lastPad">
+
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8">
+
+          <mat-list>
+            <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">*Students</h3>
+            <mat-list-item *ngFor="let student of students" (click)="ygpa2Click()">
+              <mat-icon mat-list-icon >account_circle</mat-icon>
+              <h4 mat-line>{{student.name}}</h4>
+              <p mat-line> {{student.roll}} </p>
+              <button mat-raised-button class="viewButton" (click)="openDialog(student)">View</button>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+
+      </div>
+
+    </div>
+
+  </mat-tab>
+
+  <mat-tab label="ECEN">
+
+    <div class="container-fluid mainpad">
+
+      <div class="row">
+        <div class="col-lg-12 border2">
+          <h1 class="typo1 text-center">ECEN <span style="color: #0022d2">2016-20</span></h1>
+        </div>
+      </div>
+
+      <div class="alanysisBorder">
+
+        <div class="row">
+
+          <div class="col-lg-12">
+            <h2 class="text-center redText" style="font-family: 'Roboto Mono', monospace;">*Analysis :</h2>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-6 eachPoint">
+            <h1 class="text-center">Avg. YGPA2 : <span class="redText">7.18</span></h1>
+          </div>
+
+          <div class="col-lg-3 eachPoint">
+            <h2 class="text-center">Avg. SGPA3 : <span class="redText">7.28</span></h2>
+          </div>
+
+          <div class="col-lg-3 eachPoint">
+            <h2 class="text-center">Avg. SGPA4 : <span class="redText">7.07</span></h2>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2203 : <span class="redText">6.33</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2211 : <span class="redText">7.62</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. CSEN2201 : <span class="redText">6.42</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. HMTS2002 : <span class="redText">6.67</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
+          </div>
+
+        </div>
+
+        <div class="row pointers">
+
+          <div class="col-lg-2 eachPoint">
+              <h3 class="text-center">Avg. PHYS2011 : <span class="redText">8.29</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2212 : <span class="redText">8.53</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. HMTS2011 : <span class="redText">8.22</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. PHYS2001 : <span class="redText">6.63</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2202 : <span class="redText">7.73</span></h3>
+          </div>
+
+          <div class="col-lg-2 eachPoint">
+            <h3 class="text-center">Avg. MATH2201 : <span class="redText">6.72</span></h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-2"></div>
+
+        <div class="col-8">
+
+          <h3 style="font-family: 'Roboto Mono', monospace; padding-bottom: 8vh;">Click on One of Sorting Options :</h3>
+
+          <div class="button-row" style="padding-bottom: 8vh;">
+            <button mat-raised-button style="background-color: #ffb800;" (click)="namerollClick_ece()">Name &nbsp;/ &nbsp;Roll No. &nbsp;/ &nbsp;Reg. No.</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa3Click_ece()">SGPA 3</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="sgpa4Click_ece()">SGPA 4</button>
+            <button mat-raised-button style="background-color: #ffb800;" (click)="ygpa2Click_ece()">YGPA 2</button>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+
+      </div>
+      <div class="row lastPad">
+
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8">
+
+          <mat-accordion>
+
+            <mat-expansion-panel style="padding: 20px;" *ngFor="let student_ece of students_ece"
+            (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+              <mat-expansion-panel-header style="font-family: 'Roboto Mono', monospace;">
+                <mat-panel-title>
+                  <mat-icon mat-list-icon >account_circle</mat-icon>
+                  &nbsp;&nbsp;{{student_ece.roll}}
+                </mat-panel-title>
+              <mat-panel-description>
+                <p>{{student_ece.name}}</p>
+              </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <h4 style="padding-left: 28%; font-family: 'Roboto Mono', monospace;">Insight :</h4>
+
+              <mat-list>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Name</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{student_ece.name}}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Roll</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{ student_ece.roll }}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">Reg. No.</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{ student_ece.regno }}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">4th Semester Grades :</h3>
+                  <mat-list-item>
+                      <h2 mat-line>CHEM2001 : {{ student_ece.CHEM2001 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2002 : {{ student_ece.ECEN2002 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2012 : {{ student_ece.ECEN2012 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>HMTS2002 : {{ student_ece.HMTS2002 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>PHYS2011 : {{ student_ece.PHYS2011 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>HMTS2011 : {{ student_ece.HMTS2011 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2204 : {{ student_ece.ECEN2204 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2213 : {{ student_ece.ECEN2213 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2211 : {{ student_ece.ECEN2211 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2201 : {{ student_ece.ECEN2201 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>ECEN2203 : {{ student_ece.ECEN2203 }}</h2>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <h2 mat-line>PHYS2001 : {{ student_ece.PHYS2001 }}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">3rd Semester</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{ student_ece.odd }}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">4th Semester</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{student_ece.even}}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+                  <h3 mat-subheader style="font-family: 'Roboto Mono', monospace;">YGPA 2</h3>
+                  <mat-list-item>
+                      <h2 mat-line>{{student_ece.ygpa}}</h2>
+                  </mat-list-item>
+
+                  <mat-divider></mat-divider>
+
+              </mat-list>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+
+      </div>
+
+    </div>
+
+  </mat-tab>
+
+</mat-tab-group>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataStudentService } from '../data-student.service';
 import { Student } from '../shared/student';
+import { Student_ece } from '../shared/student_ece';
 
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { ResultViewComponent } from '../result-view/result-view.component';
@@ -15,11 +16,13 @@ import { ResultViewComponent } from '../result-view/result-view.component';
 export class ReportsComponent implements OnInit {
 
   students : Student[];
+  students_ece : Student_ece[];
 
   constructor(private data : DataStudentService, public dialog : MatDialog) {  }
 
   ngOnInit() {
-    this.students = this.data.getStudentsYGPA2();
+    this.sgpa4Click();
+    this.sgpa4Click_ece();
   }
 
   namerollClick() {
@@ -38,7 +41,26 @@ export class ReportsComponent implements OnInit {
     this.students = this.data.getStudentsYGPA2();
   }
 
+
+  namerollClick_ece() {
+    this.students_ece = this.data.getStudentsName_ece();
+  }
+
+  sgpa4Click_ece() {
+    this.students_ece = this.data.getStudentsSGPA4_ece();
+  }
+
+  sgpa3Click_ece() {
+    this.students_ece = this.data.getStudentsSGPA3_ece();
+  }
+
+  ygpa2Click_ece() {
+    this.students_ece = this.data.getStudentsYGPA2_ece();
+  }
+
+
   openDialog(student : Student) {
+    console.log("PAsseD " + student.even);
     this.dialog.open(ResultViewComponent, { width : '75%', height : '800px', data : { datas : student } });
   }
 

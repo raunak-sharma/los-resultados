@@ -10,18 +10,20 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
     imports:
     [MatButtonModule, MatCheckboxModule, MatToolbarModule,
     MatIconModule, MatListModule, MatDialogModule, MatTableModule,
     MatSelectModule, MatSlideToggleModule, MatInputModule,
-    FlexLayoutModule, MatSidenavModule],
+    FlexLayoutModule, MatSidenavModule, MatTabsModule, MatExpansionModule],
     exports:
     [MatButtonModule, MatCheckboxModule, MatToolbarModule,
     MatIconModule, MatListModule, MatDialogModule, MatTableModule,
     MatSelectModule, MatSlideToggleModule, MatInputModule,
-    FlexLayoutModule, MatSidenavModule],
+    FlexLayoutModule, MatSidenavModule, MatTabsModule, MatExpansionModule],
 })
 
 export class MaterialModule {  }

@@ -2,8 +2,27 @@ html, body{
     background-color: #EAEAEA;
 }
 
+.tabsBar{
+    z-index: 0;
+    margin-top: 10vh;
+}
+
 mat-icon{
     color: #0022d2;
+}
+
+/deep/.mat-tab-label-active{
+    background-color: #ffb800;
+}
+
+/deep/.mat-tab-label, /deep/.mat-tab-label-active{
+    font-size: 8vh;
+    min-height: 10vh;
+    color: darkblue;
+    margin: 3px!important;
+    padding: 30px!important;
+    min-width: 48%!important;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .button-row button, .button-row a {
@@ -32,6 +51,13 @@ button {
     font-size: 11vw;
 }
 
+.typo1{
+    color: #ffb800;
+    padding: 25px;
+    font-size: 8vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
 mat-list-item{
     font-family: 'Roboto Mono', monospace;
 }
@@ -49,6 +75,7 @@ mat-list-item{
 
 .eachPoint{
     padding: 5vh;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .redText{

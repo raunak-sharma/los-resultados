@@ -1,6 +1,6 @@
-import { Component, OnInit, Inject} from '@angular/core';
-import {MatDialog, MatDialogRef} from '@angular/material';
-import {MAT_DIALOG_DATA} from '@angular/material'
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA } from '@angular/material'
 
 import { Student } from '../shared/student';
 
