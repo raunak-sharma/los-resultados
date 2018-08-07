@@ -1624,26 +1624,6 @@ export const STUDENTS_ECE : Student_ece[] = [
         "PHYS2001": "5"
     },
     {
-        "even": "9.33",
-        "ygpa": "8.89",
-        "name": "MEDHA KUMARI",
-        "odd": "8.48",
-        "CHEM2001": "10",
-        "ECEN2002": "9",
-        "ECEN2012": "8",
-        "HMTS2002": "9",
-        "PHYS2011": "10",
-        "HMTS2011": "</td>",
-        "ECEN2204": "10",
-        "ECEN2213": "width=\"45%\">",
-        "regno": "161260110334",
-        "ECEN2211": "9",
-        "ECEN2201": "9",
-        "roll": "12616003082",
-        "ECEN2203": "9",
-        "PHYS2001": "10"
-    },
-    {
         "even": "9.93",
         "ygpa": "9.86",
         "name": "MEGHNA MISRA",
@@ -1963,26 +1943,7 @@ export const STUDENTS_ECE : Student_ece[] = [
         "ECEN2203": "5",
         "PHYS2001": "6"
     },
-    {
-        "even": "9.74",
-        "ygpa": "9.23",
-        "name": "PREETI KAMAL JHA",
-        "odd": "8.76",
-        "CHEM2001": "10",
-        "ECEN2002": "9",
-        "ECEN2012": "9",
-        "HMTS2002": "9",
-        "PHYS2011": "10",
-        "HMTS2011": "</td>",
-        "ECEN2204": "10",
-        "ECEN2213": "width=\"45%\">",
-        "regno": "161260110351",
-        "ECEN2211": "10",
-        "ECEN2201": "10",
-        "roll": "12616003099",
-        "ECEN2203": "10",
-        "PHYS2001": "10"
-    },
+    
     {
         "even": "6.83",
         "ygpa": "6.83",
@@ -3668,19 +3629,21 @@ export const STUDENTS_ECE : Student_ece[] = [
         "ygpa": "6.19",
         "name": "ARUMOY GHOSHAL",
         "odd": "6",
+        "regno": "161260120059",
+        "roll": "12616003190",
+
         "CHEM2001": "6",
         "ECEN2002": "5",
         "ECEN2012": "9",
         "HMTS2002": "6",
         "PHYS2011": "9",
         "HMTS2011": "7",
+        "PHYS2001": "5",
+
         "ECEN2204": "5",
         "ECEN2213": "9",
-        "regno": "161260120059",
         "ECEN2211": "8",
         "ECEN2201": "5",
-        "roll": "12616003190",
-        "ECEN2203": "6",
-        "PHYS2001": "5"
+        "ECEN2203": "6"
     }
 ];
